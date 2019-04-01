@@ -33,6 +33,9 @@ imprimir_menu () {
     echo -e "\t\t\t f.  Abrir en terminal";
     echo -e "\t\t\t g.  Abrir en carpeta";
     echo -e "\t\t\t p.  Mostrar PCB de proceso";
+		echo -e "\t\t\t v.  Ejecutar Vim"
+		echo -e "\t\t\t n.  Ejecutar Nano"
+		echo -e "\t\t\t t.  Abrir typing.com"
 
     echo -e "\t\t\t q.  Salir";
     echo "";
@@ -139,6 +142,20 @@ post_p_funcion() {
 		decidir "cat /proc/$1/status | grep 'Name\|Pid\|Ppid\|State\|voluntary_ctxt_switches\|nonvoluntary_ctxt_switches'";
 }
 
+v_funcion() {
+	imprimir_encabezado "\tOpción v. Ejecutar Vim";
+	decidir "vim";
+}
+
+n_funcion() {
+	imprimir_encabezado "\tOpción v. Ejecutar Nano";
+	decidir "nano";
+}
+
+t_funcion() {
+	imprimir_encabezado "\tOpción v. navegar typing.com";
+	decidir "firefox https://www.typing.com &";
+}
 
 #------------------------------------------------------
 # LOGICA PRINCIPAL
@@ -158,6 +175,9 @@ do
         e|E) e_funcion;;
         f|F) f_funcion;;
         g|G) g_funcion;;
+				v|V) v_funcion;;
+				n|N) n_funcion;;
+				t|T) t_funcion;;
 	p|P) p_funcion;;
         q|Q) break;;
         *) malaEleccion;;
