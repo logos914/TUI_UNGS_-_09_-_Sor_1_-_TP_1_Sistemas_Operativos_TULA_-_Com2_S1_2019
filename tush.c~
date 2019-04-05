@@ -1,0 +1,27 @@
+#include <sys/wait.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+//para leer un comando input
+#define MAX_COMMAND_LENGTH 100
+char cmd[MAX_COMMAND_LENGTH];
+cmd=fgets(cmd, sizeof(cmd), stdin)
+//ejecutar los parámetros
+execvp(params[0], params);
+//remover el enter de tu comando
+if(cmd[strlen(cmd)-1] == '\n') {
+cmd[strlen(cmd)-1] = '\0';
+}
+//dividir el comando en un array de parámetros
+#define MAX_NUMBER_OF_PARAMS 10
+char* params[MAX_NUMBER_OF_PARAMS + 1];
+parseCmd(cmd, params);
+//donde:
+void parseCmd(char* cmd, char** params)
+{
+for(int i = 0; i < MAX_NUMBER_OF_PARAMS; i++) {
+params[i] = strsep(&cmd, " ");
+if(params[i] == NULL) break;
+}
+}

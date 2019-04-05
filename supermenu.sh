@@ -178,7 +178,7 @@ do
 				v|V) v_funcion;;
 				n|N) n_funcion;;
 				t|T) t_funcion;;
-	p|P) p_funcion;;
+				p|P) p_funcion;;
         q|Q) break;;
         *) malaEleccion;;
     esac

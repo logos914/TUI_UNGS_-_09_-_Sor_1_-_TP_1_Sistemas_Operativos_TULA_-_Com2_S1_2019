@@ -11,7 +11,7 @@ int main (int argc, char *argv[]) {
 while (1) {
   fork();
 
-  printf("Ahora el numero es:%d", numero);
+  printf("Ahora el numero es:%d \n", numero);
   numero+=1;
 }
 
