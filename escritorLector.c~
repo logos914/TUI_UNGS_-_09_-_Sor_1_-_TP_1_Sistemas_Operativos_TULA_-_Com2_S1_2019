@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int numeroCompartido;
+
+
+void escritorDeNumero(void *arg) {
+
+	while(1) {
+		//Escritura del numeroCompartido
+
+		printf("soy el escritor(");
+		usleep(1000);
+		numeroCompartido = rand() % 1000; //
+		printf("%d)\n",numeroCompartido);
+		pthread_exit(NULL);
+	}
+}
+
+void lectorDeNumero(void *arg) {
+
+	while(1) {
+		//Lectura del numeroCompartido
+		printf("soy el lector: %d",numeroCompartido);
+		pthread_exit(NULL);
+	}
+}
+
+
+int main() {
+
+	pthread_t hiloEscritor, hiloLector;
+	int id_hilo1, id_hilo2;
+    id_hilo1 = pthread_create(&hiloEscritor,NULL, (*void) escritorDeNumero, NULL);
+	if (0 != id_hilo1 ) {
+
+		printf("\nNo se pudo crear el hilo escritor\n");
+		return -1;
+	}
+
+id_hilo2 = pthread_create(&hiloLector,NULL, (*void) lectorDeNumero, NULL)
+	if (0 != id_hilo2) {
+
+			printf("\nNo se pudo crear el hilo lector\n");
+			return -1;
+		}
+
+}
