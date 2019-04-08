@@ -102,11 +102,22 @@ int main(int argc, char *argv[])
 	sem_init(&sem_D, 0, 0);
 
 
-	id_ganar = pthread_create(&h_ganar, NULL, ganar, (void *)NULL);
-	id_perder = pthread_create(&h_perder, NULL, perder, (void *)NULL);
+pthread_attr_t atributos; 
+pthread_attr_init(&atributos);
+struct sched_param prioridad;
+pthread_attr_getschedparam(&atributos,&prioridad);
+prioridad.sched_priority++;
+
+pthread_attr_setschedparam(&atributos,&prioridad);
+
+	id_ganar = pthread_create(&h_ganar, &atributos, ganar, (void *)NULL);
+	
+
+
 	id_jugar = pthread_create(&h_jugar, NULL, jugar, (void *)NULL);
 	id_descansar = pthread_create(&h_descansar, NULL, descansar, (void *)NULL);
 	id_terminar = pthread_create(&h_terminar, NULL, terminar, (void *)NULL);
+	id_perder = pthread_create(&h_perder, NULL, perder, (void *)NULL);
 
 	if (0 != id_jugar)
 	{
