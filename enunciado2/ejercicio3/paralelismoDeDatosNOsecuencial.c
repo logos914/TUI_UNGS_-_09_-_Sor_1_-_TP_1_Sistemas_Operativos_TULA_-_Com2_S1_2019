@@ -24,11 +24,13 @@ int main()
     for (i = 0; i < 10000; i++)
     {
         fscanf(myFile, "%d,", &numberArray[i]);
-        sumaDeDigitos+= numberArray[i];
+        //sumaDeDigitos+= numberArray[i]; //Demasiado rápido asi
     }
     fclose(myFile);
 
-
+    for (int i = 0; i < 10000; i++) {
+        sumaDeDigitos = sumaDeDigitos + numberArray[i];
+    }
     
     printf("La suma es:%d\n",sumaDeDigitos);
     return 0;

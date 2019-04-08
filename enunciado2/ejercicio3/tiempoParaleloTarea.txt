@@ -1,0 +1,127 @@
+
+Suma es: 44889
+El promedio de entre los 10000 primeros digitos es: 4
+El nro 0 aparece 968 veces
+El nro 1 aparece 1026 veces
+El nro 2 aparece 1021 veces
+El nro 3 aparece 975 veces
+El nro 4 aparece 1012 veces
+El nro 5 aparece 1046 veces
+El nro 6 aparece 1021 veces
+El nro 7 aparece 970 veces
+El nro 8 aparece 947 veces
+El nro 9 aparece 1014 veces
+La cantidad de primos es 4012
+La suma de primos es 16987
+Suma es: 44889
+El promedio de entre los 10000 primeros digitos es: 4
+El nro 0 aparece 968 veces
+El nro 1 aparece 1026 veces
+El nro 2 aparece 1021 veces
+El nro 3 aparece 975 veces
+El nro 4 aparece 1012 veces
+El nro 5 aparece 1046 veces
+El nro 6 aparece 1021 veces
+El nro 7 aparece 970 veces
+El nro 8 aparece 947 veces
+El nro 9 aparece 1014 veces
+La cantidad de primos es 4012
+La suma de primos es 16987
+Suma es: 44889
+El promedio de entre los 10000 primeros digitos es: 4
+El nro 0 aparece 968 veces
+El nro 1 aparece 1026 veces
+El nro 2 aparece 1021 veces
+El nro 3 aparece 975 veces
+El nro 4 aparece 1012 veces
+El nro 5 aparece 1046 veces
+El nro 6 aparece 1021 veces
+El nro 7 aparece 970 veces
+El nro 8 aparece 947 veces
+El nro 9 aparece 1014 veces
+La cantidad de primos es 4012
+La suma de primos es 16987
+El nro 0 aparece 968 veces
+El nro 1 aparece 1026 veces
+El nro 2 aparece 1021 veces
+El nro 3 aparece 975 veces
+El nro 4 aparece 1012 veces
+El nro 5 aparece 1046 veces
+El nro 6 aparece 1021 veces
+El nro 7 aparece 970 veces
+El nro 8 aparece 947 veces
+El nro 9 aparece 1014 veces
+La cantidad de primos es 4012
+La suma de primos es 16987
+Suma es: 44889
+El promedio de entre los 10000 primeros digitos es: 4
+Suma es: 44889
+El promedio de entre los 10000 primeros digitos es: 4
+El nro 0 aparece 968 veces
+El nro 1 aparece 1026 veces
+El nro 2 aparece 1021 veces
+El nro 3 aparece 975 veces
+El nro 4 aparece 1012 veces
+El nro 5 aparece 1046 veces
+El nro 6 aparece 1021 veces
+El nro 7 aparece 970 veces
+El nro 8 aparece 947 veces
+El nro 9 aparece 1014 veces
+La cantidad de primos es 4012
+La suma de primos es 16987
+Suma es: 44889
+El promedio de entre los 10000 primeros digitos es: 4
+El nro 0 aparece 968 veces
+El nro 1 aparece 1026 veces
+El nro 2 aparece 1021 veces
+El nro 3 aparece 975 veces
+El nro 4 aparece 1012 veces
+El nro 5 aparece 1046 veces
+El nro 6 aparece 1021 veces
+El nro 7 aparece 970 veces
+El nro 8 aparece 947 veces
+El nro 9 aparece 1014 veces
+La cantidad de primos es 4012
+La suma de primos es 16987
+Suma es: 44889
+El promedio de entre los 10000 primeros digitos es: 4
+La cantidad de primos es 4012
+La suma de primos es 16987
+El nro 0 aparece 968 veces
+El nro 1 aparece 1026 veces
+El nro 2 aparece 1021 veces
+El nro 3 aparece 975 veces
+El nro 4 aparece 1012 veces
+El nro 5 aparece 1046 veces
+El nro 6 aparece 1021 veces
+El nro 7 aparece 970 veces
+El nro 8 aparece 947 veces
+El nro 9 aparece 1014 veces
+Suma es: 44889
+El promedio de entre los 10000 primeros digitos es: 4
+La cantidad de primos es 4012
+La suma de primos es 16987
+El nro 0 aparece 968 veces
+El nro 1 aparece 1026 veces
+El nro 2 aparece 1021 veces
+El nro 3 aparece 975 veces
+El nro 4 aparece 1012 veces
+El nro 5 aparece 1046 veces
+El nro 6 aparece 1021 veces
+El nro 7 aparece 970 veces
+El nro 8 aparece 947 veces
+El nro 9 aparece 1014 veces
+Suma es: 44889
+El promedio de entre los 10000 primeros digitos es: 4
+El nro 0 aparece 968 veces
+El nro 1 aparece 1026 veces
+El nro 2 aparece 1021 veces
+El nro 3 aparece 975 veces
+El nro 4 aparece 1012 veces
+El nro 5 aparece 1046 veces
+El nro 6 aparece 1021 veces
+El nro 7 aparece 970 veces
+El nro 8 aparece 947 veces
+El nro 9 aparece 1014 veces
+La cantidad de primos es 4012
+La suma de primos es 16987
