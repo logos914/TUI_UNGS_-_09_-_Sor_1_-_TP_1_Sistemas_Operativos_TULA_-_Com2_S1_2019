@@ -1,34 +1,38 @@
+// Librerias requeridas para imprimir en pantalla, ejecutar hilos concurrentemente, hacer un sleep y/o generar un nro random
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include <stdlib.h>
 #include <unistd.h>
 
+
+// La variable compartida
 int numeroCompartido = 0;
+int numeroCompartidoAnterior = 0;
 
 
 void* escritorDeNumero() {
 
 	while(1) {
-		//Escritura del numeroCompartido
+		//Escritura del nuevo numeroCompartido y resguardo del anterior.
 
-		printf("\nsoy el escritor(");
-		usleep(1000);
-		numeroCompartido = rand() % 1000; //
-		printf("%d)\n",numeroCompartido);
+		numeroCompartidoAnterior = numeroCompartido;
+		usleep(500);
+		numeroCompartido = rand() % 1000; 
+		printf("\nsoy el escritor (%d,%d)",numeroCompartido,numeroCompartidoAnterior);
 		
 	}
-	// pthread_exit(NULL);
+	
 }
 
 void* lectorDeNumero() {
 
 	while(1) {
-		//Lectura del numeroCompartido
-		printf("\nsoy el lector: %d",numeroCompartido);
+
+		//Lectura del numeroCompartido y mostrar en pantalla
+		printf("\nsoy el lector | El actual es: %d. El anterior es:%d",numeroCompartido,numeroCompartidoAnterior);
 		
 	}
-	// pthread_exit(NULL);
+	
 }
 
 
