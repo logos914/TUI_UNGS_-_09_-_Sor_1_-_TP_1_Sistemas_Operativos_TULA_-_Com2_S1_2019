@@ -79,7 +79,7 @@ void* lectorDeNumero(void *arg) {
 
 int main() {
 
-	pthread_t hiloEscritor, hiloLector;
+	pthread_t hiloEscritor, hiloLector1, hiloLector2, hiloLector3;
 	int id_hilo1, id_hilo2, id_hilo3, id_hilo4;
 
 
@@ -87,9 +87,9 @@ int main() {
 	sem_init(&semaforosLectura, 0,1);
 
 
-	id_hilo2 = pthread_create(&hiloLector,NULL, lectorDeNumero,(void*) NULL);
-	id_hilo3 = pthread_create(&hiloLector,NULL, lectorDeNumero,(void*) NULL);
-	id_hilo4 = pthread_create(&hiloLector,NULL, lectorDeNumero,(void*) NULL);
+	id_hilo2 = pthread_create(&hiloLector1,NULL, lectorDeNumero,(void*) NULL);
+	id_hilo3 = pthread_create(&hiloLector2,NULL, lectorDeNumero,(void*) NULL);
+	id_hilo4 = pthread_create(&hiloLector3,NULL, lectorDeNumero,(void*) NULL);
 	id_hilo1 = pthread_create(&hiloEscritor,NULL,  escritorDeNumero,(void*) NULL);
 	
 	
@@ -122,7 +122,9 @@ int main() {
 
 pthread_join(hiloEscritor , NULL);
 
-pthread_join(hiloLector , NULL);
+pthread_join(hiloLector1 , NULL);
+pthread_join(hiloLector2 , NULL);
+pthread_join(hiloLector3 , NULL);
 
 pthread_mutex_destroy(&excluMutua);
 
